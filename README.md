@@ -19,12 +19,9 @@ The core quantum state often considered for distribution is of the form:
 
 
 \newcommand{\ket}[1]{\left|{#1}\right\rangle}
-∣ψ⟩=λ 
-0
-​	
- ∣01⟩+λ 
-1
-​	
+
+\ket{01}
+$\ket{01}$
  ∣10⟩
 This state, or variations thereof, is distributed by sources within the network (e.g., the triangle network involving three parties, Alice, Bob, and Charlie, each receiving subsystems from two independent sources).
 
