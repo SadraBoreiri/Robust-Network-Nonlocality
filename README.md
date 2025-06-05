@@ -10,3 +10,21 @@ This work confronts this challenge by presenting noise-robust proofs of network 
 The significance of this research lies in its practical implications. By considering quantum distributions arising from imperfect sources and measurements, we quantify the resilience of network nonlocality to realistic imperfections. Specifically, we establish noise robustness thresholds for phenomena such as dephasing noise (up to approximately 80%) and white noise (up to approximately 0.67%). Furthermore, we demonstrate that even distributions that are merely in the vicinity (measured by total-variation distance) of certain ideal nonlocal quantum distributions retain their nonlocality. This research paves the way for the experimental observation and practical implementation of quantum nonlocality in complex network configurations.
 
 The Python code provided in this repository allows for the numerical simulation and verification of these findings, particularly for the triangle network under various noise models.
+
+
+# 🔬 Theoretical Background & Notebook Details
+The research investigates the conditions under which quantum networks display correlations inexplicable by local hidden variable models, even with independent sources. This is achieved by moving beyond idealized scenarios and incorporating noise into the system. The "inflation" technique remains a conceptual background for bounding classical correlations, but the primary focus here is on the robustness of quantum correlations.
+
+The core quantum state often considered for distribution is of the form:
+
+
+\newcommand{\ket}[1]{\left|{#1}\right\rangle}
+∣ψ⟩=λ 
+0
+​	
+ ∣01⟩+λ 
+1
+​	
+ ∣10⟩
+This state, or variations thereof, is distributed by sources within the network (e.g., the triangle network involving three parties, Alice, Bob, and Charlie, each receiving subsystems from two independent sources).
+
