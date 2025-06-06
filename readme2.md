@@ -28,7 +28,7 @@ $$
 
 This state, or variations thereof, is distributed by sources within the network (e.g., the triangle network involving three parties, Alice, Bob, and Charlie, each receiving subsystems from two independent sources).
 
-<pre> The entangled states are defined as: ```latex $$ \begin{aligned} |\phi_{1,0}\rangle &= u |0,1\rangle + v|1,0\rangle \\ |\phi_{1,1}\rangle &= v |0,1\rangle - u|1,0\rangle \\ |\phi_{0,0}\rangle &= w |0,0\rangle + z|1,1\rangle \\ |\phi_{0,1}\rangle &= z |0,0\rangle - w|1,1\rangle \end{aligned} $$ ``` </pre>
+The entangled states are defined as: ```latex $$ \begin{aligned} |\phi_{1,0}\rangle &= u |0,1\rangle + v|1,0\rangle \\ |\phi_{1,1}\rangle &= v |0,1\rangle - u|1,0\rangle \\ |\phi_{0,0}\rangle &= w |0,0\rangle + z|1,1\rangle \\ |\phi_{0,1}\rangle &= z |0,0\rangle - w|1,1\rangle \end{aligned} $$
 
 
 ### Key Notebooks and Formulations:
