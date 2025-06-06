@@ -35,12 +35,13 @@ The Jupyter notebooks implement the mathematical framework to analyze these netw
 1.  **`Noisless_MOSEK.ipynb`**:
     * **Focus**: Establishes the baseline by generating the quantum probability distribution in the *absence* of noise and formulates the LP to test for nonlocality in this ideal scenario.
     * **States & Measurements**: Defines the initial bipartite entangled state $|\psi\rangle$ and the projective measurements ${|\phi_{x,y}\rangle}$ performed by the parties.
-        $
-            |\phi_{1,0}\rangle &= u |0,1\rangle + v|1,0\rangle \\
-            |\phi_{1,1}\rangle &= v |0,1\rangle - u|1,0\rangle \\
+        $$|\phi_{1,0}\rangle &= u |0,1\rangle + v|1,0\rangle $$
+       $$ |\phi_{1,1}\rangle &= v |0,1\rangle - u|1,0\rangle $$
+  
+      $$
             |\phi_{0,0}\rangle &= w |0,0\rangle + z|1,1\rangle \\
             |\phi_{0,1}\rangle &= z |0,0\rangle - w|1,1\rangle
-        $
+        $$
     * **LP Formulation**: Sets up the constraints for a local hidden variable model in the network, including probability normalization and independence conditions reflecting the network structure. The objective function then tests if the quantum distribution lies outside the classical polytope.
 
 2.  **`LP_WhiteNoise_BEST_Q64.ipynb`**:
