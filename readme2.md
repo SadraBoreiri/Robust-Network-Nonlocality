@@ -32,9 +32,9 @@ The entangled states are defined as:
 
 
 $$ |\phi_{1,0}\rangle = u |0,1\rangle + v|1,0\rangle $$
-$$ |\phi_{1,1}\rangle &= v |0,1\rangle - u|1,0\rangle $$
-$$ |\phi_{0,0}\rangle &= w |0,0\rangle + z|1,1\rangle $$
-$$ |\phi_{0,1}\rangle &= z |0,0\rangle - w|1,1\rangle $$
+$$ |\phi_{1,1}\rangle = v |0,1\rangle - u|1,0\rangle $$
+$$ |\phi_{0,0}\rangle = w |0,0\rangle + z|1,1\rangle $$
+$$ |\phi_{0,1}\rangle = z |0,0\rangle - w|1,1\rangle $$
 
 ### Key Notebooks and Formulations:
 
