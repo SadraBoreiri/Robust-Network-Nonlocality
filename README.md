@@ -39,10 +39,7 @@ $$ |\phi_{0,1}\rangle = z |0,0\rangle - w|1,1\rangle $$
 The Jupyter notebooks implement the mathematical framework to analyze these networks, primarily using Linear Programming (LP) solved with MOSEK to distinguish quantum nonlocal correlations from classical ones.
 
 1.  **`Noisless_MOSEK.ipynb`**:
-    * **Focus**: Establishes the baseline by generating the quantum probability distribution in the *absence* of noise and formulates the LP to test for nonlocality in this ideal scenario.
-    * **States & Measurements**: Defines the initial bipartite entangled state $|\psi\rangle$ and the projective measurements
-    
-    *   HELLO
+    * **Focus**: Establishes the baseline by generating the quantum probability distribution in the *absence* of noise and formulates the LP to 
         
     * **LP Formulation**: Sets up the constraints for a local hidden variable model in the network, including probability normalization and independence conditions reflecting the network structure. The objective function then tests if the quantum distribution lies outside the classical polytope.
 
