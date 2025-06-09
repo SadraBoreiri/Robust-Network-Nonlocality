@@ -46,9 +46,7 @@ The Jupyter notebooks implement the mathematical framework to analyze these netw
 2.  **`LP_WhiteNoise_BEST_Q64.ipynb`**:
     * **Focus**: Investigates the impact of **white noise** on the nonlocality of the network. White noise can be introduced at the source level (affecting the shared state) and/or at the measurement stage.
     * **State under Source White Noise**: The initial state $\rho_S = |\psi\rangle\langle\psi|$ is mixed with maximally mixed noise:
-        $
-        \rho = (1-W) \rho_S + \frac{W}{D^N} I
-        $
+        $\rho = (1-W) |\psi\rangle\langle\psi| + \frac{W}{D^N} I$
         (where $D$ is dimension, $N$ is number of particles per source, typically $W/4$ for a two-qubit source).
     * **Noisy Measurements**: Measurements $M_{x_1,x_2}$ can also be affected:
         $
