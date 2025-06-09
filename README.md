@@ -49,9 +49,8 @@ The Jupyter notebooks implement the mathematical framework to analyze these netw
         $\rho = (1-W) |\psi\rangle\langle\psi| + \frac{W}{4} I$ for the noise parameter $w$
     * **Noisy Measurements**: Measurements $M_{x_1,x_2}$ can also be affected:
         $M'_{x_1,x_2} = (1-\eta)M_{x_1,x_2} + \eta \frac{I}{4}$
-    * The notebook aims to find the critical noise parameters ($W, \eta$) beyond which nonlocality is lost. The $f_{\epsilon}$ function mentioned is likely related to specific bounds or conditions under this noise model.
-
-3.  **`Dephasing_noise_LP.ipynb`**:
+    * The notebook aims to find the critical noise parameters ($W, \eta$) beyond which nonlocality is lost. 
+3.  **Dephasing_noise_LP.ipynb**:
     * **Focus**: Analyzes the robustness of network nonlocality against **dephasing noise**. Dephasing affects the off-diagonal elements of the density matrix in a specific basis.
     * **State under Dephasing Noise**: For the state $|\psi\rangle = \lambda_0 |01\rangle + \lambda_1 |10\rangle$, the dephased state becomes:
         $$
