@@ -20,17 +20,13 @@ The Python code provided in this repository allows for the numerical simulation 
 
 ## 🔬 Theoretical Background & Notebook Details
 
-The research investigates the conditions under which quantum networks display correlations inexplicable by local hidden variable models, even with independent sources. This is achieved by moving beyond idealized scenarios and incorporating noise into the system. The "inflation" technique remains a conceptual background for bounding classical correlations, but the primary focus here is on the robustness of quantum correlations.
-
-The core quantum state often considered for distribution is of the form:
+for each of the sources in the triangle network we consider the quantum state  of the form:
 
 $$
 |\psi\rangle = \lambda_0|01\rangle + \lambda_1|10\rangle
 $$
 
-This state, or variations thereof, is distributed by sources within the network (e.g., the triangle network involving three parties, Alice, Bob, and Charlie, each receiving subsystems from two independent sources).
-
-The entangled states are defined as: 
+This state is distributed by sources within the network (e.g., the triangle network involving three parties, Alice, Bob, and Charlie, each receiving subsystems from two independent sources) and the parties perform a measurment in the following basis:
 
 
 $$ |\phi_{1,0}\rangle = u |0,1\rangle + v|1,0\rangle $$
