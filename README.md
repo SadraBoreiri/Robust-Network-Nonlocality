@@ -39,23 +39,19 @@ $$ |\phi_{0,1}\rangle = z |0,0\rangle - w|1,1\rangle $$
 The Jupyter notebooks implement the mathematical framework to analyze these networks, primarily using Linear Programming (LP) solved with MOSEK to distinguish quantum nonlocal correlations from classical ones.
 
 1.  **`Noisless_MOSEK.ipynb`**:
-    * **Focus**: Establishes the baseline by generating the quantum probability distribution in the *absence* of noise and formulates the LP to 
+    * **Focus**: Establishes the baseline by generating the quantum probability distribution in the *absence* of noise and formulates the LP 
         
     * **LP Formulation**: Sets up the constraints for a local hidden variable model in the network, including probability normalization and independence conditions reflecting the network structure. The objective function then tests if the quantum distribution lies outside the classical polytope.
 
 2.  **`LP_WhiteNoise_BEST_Q64.ipynb`**:
     * **Focus**: Investigates the impact of **white noise** on the nonlocality of the network. White noise can be introduced at the source level (affecting the shared state) and/or at the measurement stage.
-    * **State under Source White Noise**: The initial state $\rho_S = |\psi\rangle\langle\psi|$ is mixed with maximally mixed noise:
-        $\rho = (1-W) |\psi\rangle\langle\psi| + \frac{W}{4} I$ for the noise parameter $w$
-    * **Noisy Measurements**: Measurements $M_{x_1,x_2}$ can also be affected:
-        $M'_{x_1,x_2} = (1-\eta)M_{x_1,x_2} + \eta \frac{I}{4}$
-    * The notebook aims to find the critical noise parameters ($W, \eta$) beyond which nonlocality is lost. 
+    * **State under Source White Noise**: The initial state $\rho_S = |\psi\rangle\langle\psi|$ is mixed with maximally mixed noise $\rho = (1-W) |\psi\rangle\langle\psi| + \frac{W}{4} I$ for the noise parameter $W$
+    * **Noisy Measurements**: Measurements $M_{x_1,x_2}$ can also be affected $M_{x_1,x_2}' = (1-\eta)M_{x_1,x_2} + \eta \frac{I}{4}$ for the noise parameter $\eta$
+    * The notebook aims to find the critical noise parameters ($W, \eta$) below which we can guarantee nonlocality. 
 3.  **Dephasing_noise_LP.ipynb**:
     * **Focus**: Analyzes the robustness of network nonlocality against **dephasing noise**. Dephasing affects the off-diagonal elements of the density matrix in a specific basis.
     * **State under Dephasing Noise**: For the state $|\psi\rangle = \lambda_0 |01\rangle + \lambda_1 |10\rangle$, the dephased state becomes:
-        $$
-        \rho_D = (1-d) |\psi\rangle\langle\psi| + d (\lambda_0^2 |01\rangle\langle01| + \lambda_1^2 |10\rangle\langle10|)
-        $$
+        $$\rho_D = (1-d) |\psi\rangle\langle\psi| + d (\lambda_0^2 |01\rangle\langle01| + \lambda_1^2 |10\rangle\langle10|)$$
         The notebook then uses LP to find the critical dephasing parameter $d$.
 
 4.  **`TV_Noise_LP_MOSEK.ipynb`**:
