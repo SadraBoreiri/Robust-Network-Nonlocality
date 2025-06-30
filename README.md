@@ -43,8 +43,8 @@ The Jupyter notebooks implement the mathematical framework to analyze these netw
         
     * **LP Formulation**: Sets up the constraints for a local hidden variable model in the network, including probability normalization and independence conditions reflecting the network structure. The objective function then tests if the quantum distribution lies outside the classical polytope.
 
-2.  **`LP_WhiteNoise_BEST_Q64.ipynb`**:
-    * **Focus**: Investigates the impact of **white noise** on the nonlocality of the network. White noise can be introduced at the source level (affecting the shared state) and/or at the measurement stage.
+2.  **`White_noise_LP.ipynb`**: 
+    * **Focus**: Investigates the impact of **white noise** on the nonlocality of the network. White noise can be introduced at the source level (affecting the shared state) and/or at the measurement stage. Moreover, the file `LP_WhiteNoise_BEST_Q64.ipynb` explores the improved noise robustness achieved by this method, using more computationally intensive evaluations.
     * **State under Source White Noise**: The initial state $\rho_S = |\psi\rangle\langle\psi|$ is mixed with maximally mixed noise $\rho = (1-W) |\psi\rangle\langle\psi| + \frac{W}{4} I$ for the noise parameter $W$
     * **Noisy Measurements**: Measurements $M_{x_1,x_2}$ can also be affected $M_{x_1,x_2}' = (1-\eta)M_{x_1,x_2} + \eta \frac{I}{4}$ for the noise parameter $\eta$
     * The notebook aims to find the critical noise parameters ($W, \eta$) below which we can guarantee nonlocality. 
