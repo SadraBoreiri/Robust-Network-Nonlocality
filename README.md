@@ -48,13 +48,17 @@ The Jupyter notebooks implement the mathematical framework to analyze these netw
     * **State under Source White Noise**: The initial state $\rho_S = |\psi\rangle\langle\psi|$ is mixed with maximally mixed noise $\rho = (1-W) |\psi\rangle\langle\psi| + \frac{W}{4} I$ for the noise parameter $W$
     * **Noisy Measurements**: Measurements $M_{x_1,x_2}$ can also be affected $M_{x_1,x_2}' = (1-\eta)M_{x_1,x_2} + \eta \frac{I}{4}$ for the noise parameter $\eta$
     * The notebook aims to find the critical noise parameters ($W, \eta$) below which we can guarantee nonlocality. 
-3.  **Dephasing_noise_LP.ipynb**:
+3.  **`Dephasing_noise_LP.ipynb`**:
     * **Focus**: Analyzes the robustness of network nonlocality against **dephasing noise**. Dephasing affects the off-diagonal elements of the density matrix in a specific basis.
     * **State under Dephasing Noise**: For the state $|\psi\rangle = \lambda_0 |01\rangle + \lambda_1 |10\rangle$, the dephased state becomes:
         $$\rho_D = (1-d) |\psi\rangle\langle\psi| + d (\lambda_0^2 |01\rangle\langle01| + \lambda_1^2 |10\rangle\langle10|)$$
         The notebook then uses LP to find the critical dephasing parameter $d$.
 
-4.  **`TV_Noise_LP_MOSEK.ipynb`**:
+4.  **`Double_WhiteNoise_plot.ipynb`**:
+Analyzes and visualizes the regions of white noise affecting both the sources and measurements, identifying the parameter regimes where nonlocality can still be detected using our method.
+
+
+5.  **`TV_Noise_LP_MOSEK.ipynb`**:
     * **Focus**: This notebook appears to analyze robustness against a general mixing noise, often parameterized by a visibility $V$, which can be related to Total Variation (TV) distance from an ideal distribution or mixing with white noise.
     * **State under General Mixing Noise**: The noisy state is typically of the form:
         $$
